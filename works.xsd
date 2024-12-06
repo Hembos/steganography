@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="fileTypeEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="IMAGE"/>
+            <xs:enumeration value="AUDIO"/>
+            <xs:enumeration value="VIDEO"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="typeEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ENCODE"/>
+            <xs:enumeration value="DECODE"/>
+        </xs:restriction>
+    </xs:simpleType>
+ 
+    <xs:complexType name="workInfo">
+        <xs:sequence>
+            <xs:element name="type" type="typeEnum" />
+            <xs:element name="file_type" type="fileTypeEnum" />
+            <xs:element name="inFile" type="xs:string" />
+            <xs:element name="toFile" type="xs:string" />
+            <xs:element name="outFile" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="works">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="work" type="workInfo" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

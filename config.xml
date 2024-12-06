@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="works.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<works>
+    <work>
+        <type>ENCODE</type>
+        <file_type>AUDIO</file_type>
+        <inFile>data/msg1.txt</inFile>
+        <toFile>data/1.wav</toFile>
+        <outFile>data/out.wav</outFile>
+    </work>
+
+    <work>
+        <type>DECODE</type>
+        <file_type>AUDIO</file_type>
+        <inFile>data/out.wav</inFile>
+        <toFile></toFile>
+        <outFile>data/decoded_msg1.txt</outFile>
+    </work>
+
+    <work>
+        <type>ENCODE</type>
+        <file_type>AUDIO</file_type>
+        <inFile>data/house_msg.png</inFile>
+        <toFile>data/1.wav</toFile>
+        <outFile>data/out_img.wav</outFile>
+    </work>
+
+    <work>
+        <type>DECODE</type>
+        <file_type>AUDIO</file_type>
+        <inFile>data/out_img.wav</inFile>
+        <toFile></toFile>
+        <outFile>data/decoded_house_msg.png</outFile>
+    </work>
+
+    <work>
+        <type>ENCODE</type>
+        <file_type>IMAGE</file_type>
+        <inFile>data/msg1.txt</inFile>
+        <toFile>data/img_steg.png</toFile>
+        <outFile>data/img_steg_out.png</outFile>
+    </work>
+
+    <work>
+        <type>DECODE</type>
+        <file_type>IMAGE</file_type>
+        <inFile>data/img_steg_out.png</inFile>
+        <toFile></toFile>
+        <outFile>data/decoded_msg1_from_img_steg.txt</outFile>
+    </work>
+
+    <work>
+        <type>ENCODE</type>
+        <file_type>IMAGE</file_type>
+        <inFile>data/house_msg.png</inFile>
+        <toFile>data/img_steg.png</toFile>
+        <outFile>data/encoded_img_steg.png</outFile>
+    </work>
+
+    <work>
+        <type>DECODE</type>
+        <file_type>IMAGE</file_type>
+        <inFile>data/encoded_img_steg.png</inFile>
+        <toFile></toFile>
+        <outFile>data/decoded_house_msg_from_steg_img.png</outFile>
+    </work>
+
+    <work>
+        <type>ENCODE</type>
+        <file_type>VIDEO</file_type>
+        <inFile>data/house_msg.png</inFile>
+        <toFile>data/video/sample.avi</toFile>
+        <outFile>data/video/encoded_video.avi</outFile>
+    </work>
+
+    <work>
+        <type>DECODE</type>
+        <file_type>VIDEO</file_type>
+        <inFile>data/video/encoded_video.avi</inFile>
+        <toFile></toFile>
+        <outFile>data/video/decoded_video_msg.png</outFile>
+    </work>
+</works>
